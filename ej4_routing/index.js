@@ -11,9 +11,7 @@ http.createServer((req, res) => {
         res.write(data);
         return res.end();
       } catch (error) {
-        // res.writeHead(404, { "Content-Type": "text/html" });
         console.error(error);
-        // return res.end("404 Not Found");
       }
     });
   }).listen(8080);
